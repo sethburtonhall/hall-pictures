@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from "prop-types"
+import Laurels from './Laurels'
 
-const Video = ({ title, logline, director, producer, videoUrl }) => {
+const Video = ({ title, logline, director, producer, videoUrl, laurels }) => {
+
   return (
     <div className="video-wrapper">
       <div className="video">
@@ -16,11 +18,13 @@ const Video = ({ title, logline, director, producer, videoUrl }) => {
         <div className="video-embed">
           <iframe
             src={videoUrl}
+            title={title}
             frameBorder="0"
             allow="autoplay; fullscreen"
             allowFullScreen
           ></iframe>
         </div>
+        {laurels === true ? <Laurels laurels={laurels}/> : null}
       </div>
     </div>
   )

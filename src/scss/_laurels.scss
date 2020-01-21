@@ -1,0 +1,15 @@
+.laurels {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  img {
+    width: 22%;
+    border-radius: 10px;
+
+    @media (min-width:768px) {
+      width: 18%;
+    }
+  }
+}

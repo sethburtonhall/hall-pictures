@@ -1,0 +1,21 @@
+header {
+  background: $black;
+
+  .site-title {
+    margin: 0;
+
+    .link {
+      color: white;
+      text-decoration: none;
+
+      img {
+        width: 150px;
+        margin-bottom: 0;
+      }
+
+      span {
+        display: none;
+      }
+    }
+  }
+}

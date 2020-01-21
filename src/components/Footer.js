@@ -11,7 +11,11 @@ const Footer = () => {
             <strong>Hall Pictures</strong> is a film production company based
             out of Greensboro, NC.{" "}
             <a href="mailto:seth@hallpictures.us">Say Hello!</a>
-            <a href="https://www.instagram.com/sethburtonhall/" target="_blank">
+            <a
+              href="https://www.instagram.com/sethburtonhall/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faInstagram} />
             </a>
           </p>

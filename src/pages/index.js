@@ -13,6 +13,7 @@ const IndexPage = () => {
       director: "Morten Savage",
       producer: "Seth Hall",
       url: "https://player.vimeo.com/video/327592520",
+      laurels: true,
     },
     {
       title: "CIRCLES",
@@ -21,6 +22,7 @@ const IndexPage = () => {
       director: "Morten Savage",
       producer: "Seth Hall",
       url: "https://player.vimeo.com/video/284174147",
+      laurels: false,
     },
   ]
   return (
@@ -33,7 +35,9 @@ const IndexPage = () => {
           logline={video.logline}
           director={video.director}
           producer={video.producer}
-          videoUrl={video.url} />
+          videoUrl={video.url}
+          laurels={video.laurels}
+        />
       ))}
     </Layout>
   )
