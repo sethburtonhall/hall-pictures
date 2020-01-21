@@ -1,64 +1,7 @@
-.profile {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  img {
-    width: 35%;
-  }
-}
-
-.pipeline {
-  padding: 34px 34px 0 34px;
-  background-color: #333;
-  color: white;
+.about {
 
   .header {
-    text-align: center;
-    color: white;
-    background-color: hotpink;
-    padding: 30px;
-    margin: -34px;
-    margin-bottom: 20px;
-
-    @media (min-width:768px) {
-      text-align-last: left;
-    }
-  }
-
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
-    @media (min-width:768px) {
-      flex-direction: row;
-      align-items: flex-start;
-    }
-  }
-
-  .stage {
-
-    .stage-title {
-      color: white;
-    }
-
-    .projects {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 40px;
-
-      @media (min-width:768px) {
-        margin-bottom: 0;
-      }
-
-      .project {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 20px;
-      }
-    }
-
+    background-color: $blue;
+    margin: 0;
   }
 }

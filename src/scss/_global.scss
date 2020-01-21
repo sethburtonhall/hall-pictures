@@ -1,4 +1,6 @@
 $black: #111;
+$blue: #304764;
+$orange: #C45706;
 
 // Sticky Footer
 .site {
@@ -19,6 +21,7 @@ main {
   flex-direction: column;
   justify-content: space-between;
 }
+
 // Helpers
 
 .mb-0 {
@@ -30,6 +33,18 @@ main {
 }
 
 .break {
-  margin-left:-100%;
-  margin-right:-100%;
+  margin-left: -100%;
+  margin-right: -100%;
+}
+
+.header {
+  text-align: center;
+  color: white;
+  padding: 30px;
+  margin: -34px;
+  margin-bottom: 20px;
+
+  @media (min-width:768px) {
+    text-align-last: left;
+  }
 }
