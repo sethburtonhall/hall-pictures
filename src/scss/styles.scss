@@ -1,16 +1,7 @@
-$black: #111;
-
-.wrapper {
-  margin: 0 auto;
-  max-width: 1020px;
-  padding: 1.45rem 1.0875rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-@import 'reset';
+// @import 'reset';
+@import 'global';
 @import 'header';
+@import 'about';
 @import 'video';
 @import 'laurels';
 @import 'footer';

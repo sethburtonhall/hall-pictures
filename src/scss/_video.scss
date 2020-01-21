@@ -1,3 +1,6 @@
+$blue: #304764;
+$orange: #C45706;
+
 .video-wrapper {
 
   .video {
@@ -7,7 +10,8 @@
 
     .video-meta {
       font-size: 14px;
-      line-height: 1;
+      padding: 30px;
+      border-radius: 10px;
 
       @media (min-width:768px) {
         font-size: 16px;
@@ -15,20 +19,17 @@
 
       .logline {
         margin-bottom: 0;
-        line-height: 1.7;
-      }
-    }
-
-    &:last-child {
-
-      .video-meta .logline {
-        margin-bottom: 30px;
+        max-width: 950px;
       }
     }
   }
 
-  &:first-child {
-    background-color: #304764;
+  &:first-of-type {
+    background-color: $blue;
+
+    .video-meta {
+      background-color: lighten($blue, 30);
+    }
 
     .video-embed {
       padding-top: 0;
@@ -37,8 +38,12 @@
     }
   }
 
-  &:last-child {
-    background-color: #C45706;
+  &:last-of-type {
+    background-color: $orange;
+
+    .video-meta {
+      background-color: lighten($orange, 30);
+    }
 
     .video-embed {
       padding-bottom: 63%;

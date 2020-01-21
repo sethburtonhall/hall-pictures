@@ -13,6 +13,10 @@ const Header = ({ siteTitle }) => {
             <span>{siteTitle}</span>
           </Link>
         </h1>
+        <div className="nav">
+          <Link to="/about" className="nav-link">About</Link>
+          <Link to="/" className="nav-link">Films</Link>
+        </div>
       </div>
     </header>
   )
