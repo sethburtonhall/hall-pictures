@@ -3,7 +3,9 @@ import React from 'react';
 const Nav = () => {
   return (
     <div className="nav">
-      <p>test</p>
+      <ul>
+        <li>Films</li>
+      </ul>
     </div>
   )
 }
