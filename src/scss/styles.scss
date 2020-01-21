@@ -16,7 +16,6 @@ header {
 
   .site-title {
     margin: 0;
-    text-align: center;
 
     .link {
       color: white;
@@ -98,6 +97,7 @@ header {
 
 footer {
   background-color: $black;
+  color: white;
 
   .wrapper {
     display: flex;
@@ -106,7 +106,26 @@ footer {
     text-align: center;
   }
 
-  a {
-    color: #497dce;
+    a {
+      color: #497dce;
+      margin-left: 5px;
+    }
+  
+  a svg.svg-inline--fa.fa-instagram.fa-w-14 {
+    font-size: 20px;
+    margin-left: 5px;
+    position: relative;
+    top: 2px;
+    color: #E1306C;
+    -webkit-transition: color .5s;
+    transition: color .5s;
+
+    &:hover {
+      color: #FCAF45;
+    }
+
+    li {
+      list-style: none;
+    }
   }
 }
