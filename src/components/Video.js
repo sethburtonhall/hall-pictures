@@ -8,7 +8,7 @@ const Video = ({ title, logline, director, producer, videoUrl, laurels }) => {
       <div className="video">
         <div className="video-meta">
           <h3>{title}</h3>
-          <p className="mb-0">Written and Directed by {director}</p>
+          <p className="mb-0">Written & Directed by {director}</p>
           <p>Produced by {producer}</p>
           <p className="logline">
             <i>{logline}</i>

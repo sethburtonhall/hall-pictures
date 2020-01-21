@@ -45,7 +45,7 @@ const Pipeline = () => {
       <div className="wrapper">
         {pipeline.map((p, index) => (
           <div key={index} className="stage">
-            <h3 className="stage-title">{p.stage}</h3>
+            <h2 className="stage-title">{p.stage}</h2>
             <div className="projects">
               {p.projects.map((project, index) => (
                 <div key={index} className="project">
