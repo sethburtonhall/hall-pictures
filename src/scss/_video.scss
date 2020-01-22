@@ -3,7 +3,7 @@
   .video {
     margin: 0 auto;
     max-width: 1020px;
-    padding: 1.45rem 1.0875rem;
+    padding: 1.45rem 1.0875rem 0;
 
     .video-meta {
       font-size: 12px;
@@ -19,9 +19,20 @@
         max-width: 950px;
       }
     }
+
+    .video-embed {
+      padding-bottom: 66%;
+
+      @media (min-width:768px) {
+        padding-bottom: 62%;
+      }
+    }
   }
 
-  &:first-of-type {
+/*
+* === COLOR THEMEING ===
+*/
+  &.tropical-gardens {
     background-color: $blue;
 
     .video-meta {
@@ -30,20 +41,23 @@
 
     .video-embed {
       padding-top: 0;
-      padding-bottom: 53%;
-      padding-bottom: 56.25%;
+      padding-bottom: 62%;
+
+      @media (min-width:768px) {
+        padding-bottom: 57%;
+      }
+
+      @media (min-width:960px) {
+        padding-bottom: 55%;
+      }
     }
   }
 
-  &:last-of-type {
+  &.circles {
     background-color: $orange;
 
     .video-meta {
       background-color: lighten($orange, 30);
-    }
-
-    .video-embed {
-      padding-bottom: 63%;
     }
   }
 }

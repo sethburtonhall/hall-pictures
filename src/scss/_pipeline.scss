@@ -1,5 +1,5 @@
 .pipeline {
-  padding: 34px 34px 0 34px;
+  padding: 1.45rem 1.0875rem;
   background-color: $black;
   color: white;
 
@@ -11,14 +11,27 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
 
     @media (min-width: 768px) {
       flex-direction: row;
       align-items: flex-start;
     }
+
+    @media (min-width: 960px) {
+      flex-wrap: nowrap;
+      text-align: left;
+    }
   }
 
   .stage {
+    flex: 50%;
+
+    @media (min-width: 768px) {
+      margin-bottom: 40px;
+    }
+
     .stage-title {
       color: lighten($orange, 5);
     }

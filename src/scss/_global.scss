@@ -32,16 +32,11 @@ main {
   font-size: 12px;
 }
 
-// .break {
-//   margin-left: -100%;
-//   margin-right: -100%;
-// }
-
 .header {
   text-align: center;
   color: white;
-  padding: 30px;
-  margin: -34px;
+  padding: 1.45rem 1.0875rem;
+  margin: -34px -17px;
   margin-bottom: 20px;
 
   @media (min-width:768px) {

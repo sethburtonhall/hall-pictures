@@ -11,11 +11,12 @@ const Video = ({
   hasLaurels,
   laurels
 }) => {
+
   return (
-    <div className="video-wrapper">
+    <div className={`video-wrapper ${title}`}>
       <div className="video">
         <div className="video-meta">
-          <h3>{title}</h3>
+          <h3>{title.toUpperCase().replace(/-/g, " ")}</h3>
           <p className="mb-0">Written & Directed by {director}</p>
           <p>Produced by {producer}</p>
           <p className="logline">
@@ -31,7 +32,7 @@ const Video = ({
             allowFullScreen
           ></iframe>
         </div>
-        {hasLaurels === true ? <Laurels laurels={laurels}/> : null}
+        {hasLaurels === true ? <Laurels laurels={laurels} /> : null}
       </div>
     </div>
   )

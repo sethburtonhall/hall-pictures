@@ -11,8 +11,11 @@ import "../scss/styles.scss"
 
 const IndexPage = () => {
   const videos = [
+    // The video title should be all lower case and include dashes between words.
+    // This will allow for '.title-name' styling in 'video.scss'
+    // and 'Video.js' will replace '-' with spaces to display title correctly
     {
-      title: "TROPICAL GARDENS",
+      title: "tropical-gardens",
       logline:
         "A down and out loner copes with his recent heartbreak by obsessing over a mini-golf course record.",
       director: "Morten Savage",
@@ -35,10 +38,10 @@ const IndexPage = () => {
         {
           image: atlantaComedy,
         },
-      ]
+      ],
     },
     {
-      title: "CIRCLES",
+      title: "circles",
       logline:
         "A frail and helpless 18-year-old finds himself in a wilderness rehabilitation program with a second chance to make his way in the world.The problem is that he refuses to get out of his tent.",
       director: "Morten Savage",
