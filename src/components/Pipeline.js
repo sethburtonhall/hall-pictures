@@ -1,44 +1,7 @@
 import React from "react"
+import PropTypes from "prop-types"
 
-const Pipeline = () => {
-  const pipeline = [
-    {
-      stage: "Development",
-      projects: [
-        {
-          name: "Rubber Chicken",
-          type: "web series",
-          genre: "comedy",
-        },
-        {
-          name: "8am",
-          type: "short film",
-          genre: "drama",
-        },
-      ],
-    },
-    {
-      stage: "Pre-Production",
-      projects: [
-        {
-          name: "Liquidity",
-          type: "short film",
-          genre: "horror",
-        },
-      ],
-    },
-    {
-      stage: "Post Production",
-      projects: [
-        {
-          name: "Morning Routine",
-          type: "short film",
-          genre: "drama",
-        },
-      ],
-    },
-  ]
-
+const Pipeline = ({ pipeline }) => {
   return (
     <div className="pipeline">
       <h1 className="header">Project Pipeline</h1>
@@ -65,6 +28,10 @@ const Pipeline = () => {
       </div>
     </div>
   )
+}
+
+Pipeline.propTypes = {
+  pipeline: PropTypes.array
 }
 
 export default Pipeline

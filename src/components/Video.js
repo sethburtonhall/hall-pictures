@@ -2,7 +2,15 @@ import React from "react"
 import PropTypes from "prop-types"
 import Laurels from "./Laurels"
 
-const Video = ({ title, logline, director, producer, videoUrl, laurels }) => {
+const Video = ({
+  title,
+  logline,
+  director,
+  producer,
+  videoUrl,
+  hasLaurels,
+  laurels
+}) => {
   return (
     <div className="video-wrapper">
       <div className="video">
@@ -23,7 +31,7 @@ const Video = ({ title, logline, director, producer, videoUrl, laurels }) => {
             allowFullScreen
           ></iframe>
         </div>
-        {laurels === true ? <Laurels laurels={laurels} /> : null}
+        {hasLaurels === true ? <Laurels laurels={laurels}/> : null}
       </div>
     </div>
   )
@@ -35,6 +43,8 @@ Video.propTypes = {
   director: PropTypes.string,
   producer: PropTypes.string,
   videoUrl: PropTypes.string,
+  hasLaurels: PropTypes.bool,
+  laurels: PropTypes.array,
 }
 
 export default Video

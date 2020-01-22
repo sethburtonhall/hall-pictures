@@ -2,6 +2,11 @@ import React from "react"
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 import Video from "../components/Video"
+import spotlight from "../images/laurels/spotlight.jpg"
+import dumbo from "../images/laurels/dumbo.jpg"
+import riverrun from "../images/laurels/riverrun.jpg"
+import strangerDays from "../images/laurels/stranger-days.png"
+import atlantaComedy from "../images/laurels/atlanta-comedy.jpg"
 import "../scss/styles.scss"
 
 const IndexPage = () => {
@@ -13,7 +18,24 @@ const IndexPage = () => {
       director: "Morten Savage",
       producer: "Seth Hall",
       url: "https://player.vimeo.com/video/327592520",
-      laurels: true,
+      hasLaurels: true,
+      laurels: [
+        {
+          image: spotlight,
+        },
+        {
+          image: dumbo,
+        },
+        {
+          image: riverrun,
+        },
+        {
+          image: strangerDays,
+        },
+        {
+          image: atlantaComedy,
+        },
+      ]
     },
     {
       title: "CIRCLES",
@@ -22,7 +44,7 @@ const IndexPage = () => {
       director: "Morten Savage",
       producer: "Seth Hall",
       url: "https://player.vimeo.com/video/284174147",
-      laurels: false,
+      hasLaurels: false,
     },
   ]
   return (
@@ -36,6 +58,7 @@ const IndexPage = () => {
           director={video.director}
           producer={video.producer}
           videoUrl={video.url}
+          hasLaurels={video.hasLaurels}
           laurels={video.laurels}
         />
       ))}

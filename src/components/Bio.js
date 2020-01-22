@@ -26,7 +26,7 @@ const Bio = () => {
           most important. We strive to partner with up and coming writers and
           directors and provide opportunities for a variety of film creatives.
           Simply put we want to be the production company that can get films
-          made.
+          made and enjoy the experience along the way.
         </p>
       </div>
     </div>

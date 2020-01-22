@@ -1,0 +1,21 @@
+.giphy {
+   min-height: 79vh;
+   margin: auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #152644;
+
+   img {
+     display: block;
+     width: 100%;
+     min-width: 100px;
+     max-width: 750px;
+     /*actual image width*/
+     height: auto;
+     /* maintain aspect ratio*/
+     margin: auto;
+     /*optional centering of image*/
+    //  border: 3px solid $black;
+   }
+}

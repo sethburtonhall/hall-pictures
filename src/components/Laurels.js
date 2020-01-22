@@ -1,28 +1,7 @@
 import React from "react"
-import spotlight from "../images/laurels/spotlight.jpg"
-import dumbo from "../images/laurels/dumbo.jpg"
-import riverrun from "../images/laurels/riverrun.jpg"
-import strangerDays from "../images/laurels/stranger-days.png"
-import atlantaComedy from "../images/laurels/atlanta-comedy.jpg"
+import PropTypes from "prop-types"
 
-const Laurels = () => {
-  const laurels = [
-    {
-      image: spotlight,
-    },
-    {
-      image: dumbo,
-    },
-    {
-      image: riverrun,
-    },
-    {
-      image: strangerDays,
-    },
-    {
-      image: atlantaComedy,
-    },
-  ]
+const Laurels = ({ laurels }) => {
   return (
     <div className="laurels">
       {laurels.map((laurel, index) => (
@@ -30,6 +9,10 @@ const Laurels = () => {
       ))}
     </div>
   )
+}
+
+Laurels.propType = {
+  laurels: PropTypes.object
 }
 
 export default Laurels

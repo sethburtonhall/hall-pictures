@@ -1,8 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
-import logo from '../images/logo.png'
-import symbol from "../images/logo-symbol.png"
 
 const Header = ({ siteTitle }) => {
   return (
@@ -10,7 +8,6 @@ const Header = ({ siteTitle }) => {
       <div className="wrapper">
         <h2 className="site-title">
           <Link className="link" to="/">
-            {/* <img className="logo" src={symbol} alt="Hall Pictures Logo" /> */}
             <span className="title">{siteTitle}</span>
           </Link>
         </h2>
