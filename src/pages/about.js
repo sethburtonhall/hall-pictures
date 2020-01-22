@@ -33,6 +33,16 @@ const About = () => {
       ],
     },
     {
+      stage: "Production",
+      projects: [
+        {
+          name: "Liquidity",
+          type: "April",
+          genre: "2020",
+        },
+      ],
+    },
+    {
       stage: "Post Production",
       projects: [
         {
