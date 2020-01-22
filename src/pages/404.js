@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 import gif from "../images/404-2.gif"
+import "../scss/styles.scss"
 
 const NotFoundPage = () => (
   <Layout>
