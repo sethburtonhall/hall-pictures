@@ -15,13 +15,17 @@ header {
       color: white;
       text-decoration: none;
 
-      img {
-        width: 150px;
+      .logo {
+        width: 50px;
         margin-bottom: 0;
+        background-color: $blue;
+        border-radius: 100px;
       }
 
-      span {
-        display: none;
+      .title {
+        // display: none;
+        letter-spacing: 2px;
+        font-weight: normal;
       }
     }
   }
@@ -31,6 +35,7 @@ header {
     .nav-link {
       color: white;
       font-family: 'Raleway', sans-serif;
+      letter-spacing: 1px;
 
       &:first-child {
         margin-right: 20px;

@@ -6,21 +6,20 @@ const Footer = () => {
   return (
     <footer>
       <div className="wrapper">
-        <div className="about">
+        <div>
           <p>
-            <strong>Hall Pictures</strong> is a film production company based
-            out of Greensboro, NC.{" "}
-            <a href="mailto:seth@hallpictures.us">Say Hello!</a>
-            <a
-              href="https://www.instagram.com/sethburtonhall/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faInstagram} />
-            </a>
+            <strong>Hall Pictures</strong> is a film production company based in
+            Greensboro, NC. <span>© {new Date().getFullYear()}</span>
           </p>
+          <a href="mailto:seth@hallpictures.us">Say Hello!</a>
+          <a
+            href="https://www.instagram.com/sethburtonhall/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
         </div>
-        <div className="copyright">© {new Date().getFullYear()}</div>
       </div>
     </footer>
   )
