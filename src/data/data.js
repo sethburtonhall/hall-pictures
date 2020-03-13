@@ -67,7 +67,7 @@ export const pipeline = [
     stage: "Pre-Production",
     projects: [
       {
-        name: "Liquidity",
+        name: "The Dream",
         type: "short film",
         genre: "horror",
       },
@@ -77,8 +77,8 @@ export const pipeline = [
     stage: "Production",
     projects: [
       {
-        name: "Liquidity",
-        type: "April",
+        name: "The Dream",
+        type: "June",
         genre: "2020",
       },
     ],
