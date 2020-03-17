@@ -9,6 +9,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.12.0",
     "@fortawesome/free-solid-svg-icons": "^5.12.0",
     "@fortawesome/react-fontawesome": "^0.1.8",
+    "@styled-system/css": "^5.1.5",
     "gatsby": "^2.18.12",
     "gatsby-image": "^2.2.34",
     "gatsby-plugin-manifest": "^2.2.31",
@@ -25,6 +26,9 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
     "react-typography": "^0.16.19",
+    "styled-components": "^5.0.1",
+    "styled-system": "^5.1.5",
+    "system-components": "^3.0.3",
     "typography": "^0.16.19",
     "typography-theme-doelger": "^0.16.19",
     "typography-theme-lawton": "^0.16.19"

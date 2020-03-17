@@ -1,10 +1,14 @@
-import React from 'react';
+import React from "react"
+import { ThemeProvider } from "styled-components"
+import { theme, StyledBio, Text, Wrapper } from "../design-system"
 
-const Bio = () => {
-  return (
-    <div className="about">
-      <h1 className="header">About</h1>
-      <div className="wrapper">
+const Bio = () => (
+  <ThemeProvider theme={theme}>
+    <StyledBio>
+      <Text is="h1" p={3} mb={0} bg="blue" color="white" fontSize={4}>
+        About
+      </Text>
+      <Wrapper>
         <p>
           Hall Pictures is a Greensboro, North Carolina based motion picture
           company specializing in the development and production of shorts,
@@ -28,9 +32,9 @@ const Bio = () => {
           Simply put we want to be the production company that can get films
           made and enjoy the experience along the way.
         </p>
-      </div>
-    </div>
-  )
-}
+      </Wrapper>
+    </StyledBio>
+  </ThemeProvider>
+)
 
 export default Bio
