@@ -141,7 +141,7 @@ export const StyledVideo = styled.div(
         position: "relative",
         /* 16:9 */
         height: "0",
-        pb: ["66%", "62%", null],
+        pb: ["66%", "62%"],
 
         iframe: {
           position: "absolute",
@@ -162,7 +162,7 @@ export const StyledVideo = styled.div(
 
       ".video-embed": {
         pt: 0,
-        pb: ["62%", "57%", "55%"],
+        pb: ["59%", "57%", "55%"],
       },
     },
 

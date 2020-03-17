@@ -3,7 +3,6 @@ import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 import Video from "../components/Video"
 import { films } from "../data/data"
-import "../scss/styles.scss"
 
 const IndexPage = () => {
   return (
