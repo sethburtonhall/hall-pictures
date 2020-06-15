@@ -78,7 +78,7 @@ export const pipeline = [
     projects: [
       {
         name: "The Dream",
-        type: "June",
+        type: "September",
         genre: "2020",
       },
     ],
