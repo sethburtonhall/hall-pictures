@@ -53,42 +53,35 @@ export const pipeline = [
     projects: [
       {
         name: "Rubber Chicken",
-        type: "web series",
+        type: "web series |",
         genre: "comedy",
       },
       {
         name: "8am",
-        type: "short film",
+        type: "short film |",
         genre: "drama",
       },
     ],
   },
   {
     stage: "Pre-Production",
-    projects: [
-      {
-        name: "The Dream",
-        type: "short film",
-        genre: "horror",
-      },
-    ],
+    projects: [{ type: "TBD" }],
   },
   {
     stage: "Production",
-    projects: [
-      {
-        name: "The Dream",
-        type: "September",
-        genre: "2020",
-      },
-    ],
+    projects: [{ type: "TBD" }],
   },
   {
     stage: "Post Production",
     projects: [
       {
+        name: "The Dream",
+        type: "short film |",
+        genre: "social horror",
+      },
+      {
         name: "Morning Routine",
-        type: "short film",
+        type: "short film |",
         genre: "drama",
       },
     ],

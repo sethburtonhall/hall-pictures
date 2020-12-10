@@ -36,11 +36,8 @@ const Pipeline = ({ pipeline }) => {
                         <strong>{project.name}</strong>
                       </em>
                     </span>
-                    <Text
-                      is="span"
-                      fontSize={0}
-                    >
-                      {project.type} | {project.genre}
+                    <Text is="span" fontSize={0}>
+                      {project.type} {project.genre}
                     </Text>
                   </Project>
                 ))}
